@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/app.js" defer></script>
+    <title>CERDIXPIZZA🍕</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CERDIXPIZZA🍕</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Bienvenido a Cerdix Pizza🍕</h1>
+        <p>Descubre nuestros servicios y más.</p>
+        <a href="#servicios" class="btn-primary">Descubrir Más</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="cards-container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción breve de este servicio.</p>
+                </div>
+                <div class="card">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción breve de este servicio.</p>
+                </div>
+                <div class="card">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción breve de este servicio.</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="contacto" class="contact-section">
+            <h2>Contacto - Reseñas</h2>
+            <form id="contact-form" method="POST" action="/send_email">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
+       <!-- Contenedor para mensajes flash -->
+       <div id="flash-messages" class="flash-messages"></div>
+       
+        <section id="acerca" class="about-section">
+            <h2>Acerca de Nosotros</h2>
+            <p>¡En nuestra tienda de comidas rápidas encontrarás las más deliciosas opciones para ti! Pizzas, perros calientes, lasañas y mucho más, ¡todo preparado con amor y sabor para satisfacer tu apetito! ¡Te esperamos para que disfrutes de una experiencia única!.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
